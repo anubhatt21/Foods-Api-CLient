@@ -1,0 +1,6 @@
+<h1> All Popular Foods </h1>
+<% @foods.each do |food| %>
+<p> Name: <%= food["name"] %></p>
+<p>Origin: <%= food["origin"] %></p>
+<a href="/foods/<%= food["id"] %>"> More Info </a>
+<% end %>
