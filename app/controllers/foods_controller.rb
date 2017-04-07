@@ -40,7 +40,7 @@ class FoodsController < ApplicationController
   end
 
   def destroy
-    @food = Unirest.delete("http://localhost:3000/api/v1/foods/#{params[:id]}").body
+    @message = Unirest.delete("http://localhost:3000/api/v1/foods/#{params[:id]}").body
     redirect_to "/foods"
   end
 
